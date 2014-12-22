@@ -73,7 +73,6 @@ def main():
     current_player_color = WHITE
     current_player_location = (WINDOWWIDTH * 0.2), (WINDOWHEIGHT* 0.75)
 
-    print ('hi')
     pygame.init()
     FPSCLOCK = pygame.time.Clock()
     DISPLAYSURF = pygame.display.set_mode((WINDOWWIDTH, WINDOWHEIGHT))
