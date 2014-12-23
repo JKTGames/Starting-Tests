@@ -11,10 +11,11 @@
 
 import pygame, sys
 from pygame.locals import *
+from draw_screen import *
 
 # Create the constants (go ahead and experiment with different values)
 WINDOWWIDTH =  760
-WINDOWHEIGHT = 620
+WINDOWHEIGHT = 600
 FPS = 30
 
 #                 R    G    B
@@ -66,13 +67,15 @@ def main():
     pygame.mouse.set_cursor((8, 8), (4, 4), \
     (24, 24, 24, 231, 231, 24, 24, 24), (0, 0, 0, 0, 0, 0, 0, 0))
 
-    while True:
+    while True: # main game loop
 
         checkForQuit()
 
         for event in pygame.event.get(): # event handling loop
             if event.type == MOUSEMOTION or event.type == MOUSEBUTTONDOWN or event.type == MOUSEBUTTONUP:
                 mousex, mousey = event.pos
+
+        draw_screen(DISPLAYSURF)
 
         pygame.display.update()
         FPSCLOCK.tick(FPS)

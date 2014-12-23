@@ -9,9 +9,13 @@
 # Licence:     <your licence>
 #-------------------------------------------------------------------------------
 
-from aid_destroyer import WINDOWWIDTH, WINDOWHEIGHT
+from main import WINDOWWIDTH, WINDOWHEIGHT
+from colors import *
+import pygame
+from pygame.locals import *
 
 # create objects to be blitted
-ground = pygame.rect(0, )
+ground = pygame.Rect(0, WINDOWHEIGHT * 0.9, WINDOWWIDTH, WINDOWHEIGHT * 0.1)
 
 def draw_screen(DISPLAYSURF):
+    pygame.draw.rect(DISPLAYSURF, BROWN, ground, 0)
