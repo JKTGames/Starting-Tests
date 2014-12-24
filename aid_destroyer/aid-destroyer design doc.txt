@@ -1,0 +1,26 @@
+aid_destroyer design doc
+
+For draw screen module:
+    draw ground
+    draw artillery
+    draw shots
+    draw npc civilians
+    draw falling aid
+    draw score, menu items
+    draw background
+    
+For handling events:
+    movement causes change in artillery position
+    on click -
+        if in shooting zone, shoot
+        if at pause button, pause
+        if elsewhere do nothing
+
+For updating game state:
+    use objects to keep track of -
+        shots
+        aid drops
+        npc civilians
+    timer decides entrance of npc civilians?
+    database decides aid drops? could be random
+    counter for score
