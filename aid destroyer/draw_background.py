@@ -28,6 +28,7 @@ def draw_background(DISPLAYSURF, WINDOWWIDTH, WINDOWHEIGHT):
     sky_rect = pygame.Rect(0, 0, WINDOWWIDTH, WINDOWHEIGHT)
 
     """ FIND A WAY TO BETTER REPRESENT FILENAME """
+    print (os.path.expanduser("~\Documents\GitHub\Starting-Tests\\aid destroyer\\resources\cloud1.png"))
     # load images
     cloud = pygame.image.load(os.path.expanduser\
     ("~\Documents\GitHub\Starting-Tests\\aid destroyer\\resources\cloud1.png"))

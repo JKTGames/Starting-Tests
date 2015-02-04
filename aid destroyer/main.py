@@ -11,7 +11,7 @@
 
 import pygame, sys
 from pygame.locals import *
-from draw_screen import *
+#from draw_screen import draw_screen
 
 # Create the constants (go ahead and experiment with different values)
 WINDOWWIDTH = 760
